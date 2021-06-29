@@ -12,7 +12,7 @@ for ligne in lecteur:
         compteurlikes+=1
 print("le nombre de personne qui font le like  est :",str(compteurlikes))
 
-#b.	Qui a reÃ§u le maximum de Â« like Â» (entre le web like et mobile likes)?
+#Qui a réçu beaucoup de Like
 f.seek(0)
 lecteur=csv.DictReader(f,delimiter=',')
 max_likes_received=0
@@ -51,7 +51,7 @@ for i, ligne in enumerate(lecteur):
         min_amis=int(ligne["friend_count"])
 
 
-#les utilisateurs de facebook par le nombre d"acroissants de likes
+#les utilisateurs de facebook par le nombre d'acroissants de likes
 f.seek(0)
 lecteur=csv.DictReader(f,delimiter=',')
 
@@ -61,7 +61,7 @@ for ligne in lecteur:
 dtrie= sorted(d.items(), key=operator.itemgetter(1),reverse=True)
 print(dtrie)
 
-# qui utilisent  le facebook
+# qui utilisent beaucoup le facebook
 f.seek(0)
 lecteur=csv.DictReader(f,delimiter=',')
 
